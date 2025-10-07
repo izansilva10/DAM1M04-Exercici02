@@ -1,0 +1,14 @@
+.menu{
+  position: fixed;top: 0%;
+  width: 100%;
+  background-color: red;
+  justify-content: space-between;
+}
+
+.peu {
+    background: rgba(30, 30, 30, 0.95);
+    color: #eee;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+}
