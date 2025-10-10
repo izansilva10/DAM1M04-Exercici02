@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html lang="ca" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="global.css" />
-    <title>CONTACTE</title>
-  </head>
-
-  <body>
-    <nav class="menu">
+<htmllang="ca" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="global.css">
+  <title>Contacte</title>
+  <style>
+    .contenidor {
+      gap: 70px;
+      display: flex;
+      max-width: auto;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 70px;
+    }
+    form button {
+      padding:10px;
+      background-color: gray;
+    }
+    .mapa {
+      background-color: gray;
+      height:200px;
+    }
+    .informacion {
+      margin-top: 70px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="menu">
       <div>La Meva Pàgina</div>
-      <ul>
+      <ul class="">
         <li><a href="index.html">Index</a></li>
         <li><a href="contacte.html">Contacte</a></li>
         <li><a href="productes.html">Productes</a></li>
       </ul>
     </nav>
-    <div class="container">
+
+  <div class="contenidor">
     <form>
-      <input type="text" name="nom" placeholder="Nom" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="missatge" placeholder="Missatge" required></textarea>
+      <h3>Contacta amb nosaltres</h3>
+      <input type="text" placeholder="Nom">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Missatge"></textarea>
       <button type="submit">Enviar</button>
     </form>
+
+    <div class = "informacion">
+      <h3>Informació de contacte</h3>
+      <p>Adreça: Ciutat Maravillosa</p>
+      <p>Horari: Dilluns a Divendres 9:00 - 18:00</p>
+      <p>Telèfon: 123 456 789</p>
+      <div class="mapa"></div>
     </div>
-    <footer>
-      <div class="peu">
-        <h3>Sobre nosaltres</h3>
-        <p>exemple@gmail.com</p>
-      </div>
+  </div>
+  <footer>
+        <div class="peu">
+            <h3>Sobre nosaltres</h3>
+            <p>exemple@gmail.com</p>
+        </div>
     </footer>
-  </body>
+</body>
+</html>
